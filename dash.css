@@ -13,7 +13,7 @@ body {
 }
 
 .sidebar{
-    width: 250;
+    width: 250px;
     background-color: #312450;
     padding: 20px;
     display: flex;
