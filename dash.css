@@ -1,0 +1,238 @@
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #1c1b3b; 
+ color: white;
+ display: flex;  
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sildebar {
+    width: 250;
+    background-color: #312450;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.profile p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.new-note {
+    background-color: #a2d2ff;
+    color:white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom:20px;
+    border-radius: 5px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 12px;
+        cursor: pointer;
+        font-size: 18px;
+        color: white;
+    }
+
+    nav ul li:hover {
+        background-color: #473b78;
+    }
+
+    main {
+        flex: 1;
+        padding: 20px;
+        background-color: black;
+    }
+
+    .notes-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .category{
+        background-color: #81c3d7;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 18px;
+        min-height: 100px;
+        color: black;
+    }
+    .category:nth-child(1) {
+        background-color: #ff99c8;
+    }
+
+    .category:nth-child(2) {
+        background-color: #fcf6bd;
+    }
+
+    .category:nth-child(3) {
+        background-color:#d0f4de;
+    }
+    .category:nth-child(4){
+        background-color: #a9def9;
+    }
+    .category:nth-child(5){
+        background-color: #e4c1f9;
+    }
+    .category:nth-child(6){
+        background-color: #52b788;
+    }
+    .category:nth-child(7){
+        background-color: #f38375;
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #219ebc;
+        padding: 20px;
+        box-shadow: 0 0 10px black;
+        border-radius: 8px;
+        width: 300px;
+    }
+
+    .popup-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .popup textarea {
+        width: 100%;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .popup select {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .popup button {
+        background-color: #a2d2ff;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+
+    .popup button:last-child {
+        background-color:#666;
+    }
+
+    .popup button:hover {
+        opacity: 0.8;
+    }
+
+    #notes-container {
+        padding:20px;
+        background: #1E1E2E;
+        border-radius: 8px;
+        color: white;
+    }
+    
+    .task-container {
+        margin-top: 10px;
+        padding: 10px;
+        background: #282A36;
+        border-radius: 8px;
+        min-height: 50px;
+    }
+
+    .note {
+        background: #D9E2EC;
+        color: black;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow:0px opx 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .logout-btn {
+        background: #a2d2ff;
+        color:white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .logout-btn:hover {
+        background: #a2d2ff;
+    }
+
+    .toggle-btn {
+        background: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+    }
+
+    .sidebar.collapsed {
+        width: 60px;
+    }
+    
+    .sidebar.collapsed nav ul li {
+        display: none;
+    }
+
+    .sidebar.collapsed .new-note,
+    .sidebar.collapsed .logout-btn {
+        display: none;
+    }
+
+
+
+
+
+    
