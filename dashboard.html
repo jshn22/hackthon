@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note taking App</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <div class="container">
+
+        <aside class="sidebar" id="sidebar">
+           <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+           <button class="new-note" onclick="openPopup()">New NOte</button>
+           <nav>
+            <ul>
+                <li onclick="showSection('notes')">📄 Notes</li>
+                <li onclick="showSection('lists')">📋 Lists</li>
+                <li onclick="showSection('recording')">🎤 Recording</li>
+                <li onclick="showSEction('sketches')">✏️ Sketches</li>
+                <li onclick="showSection('trash')">🗑️ Trash</li>
+            </ul>
+           </nav>
+           <button class="logout-btn" onclick="logout()">Logout</button>
+        </aside>
+        <main>
+            <div class="notes-grid">
+                <div class="category" id="school-notes">
+                      <h3>My school notes</h3>
+                </div>
+                <div class="category" id="funny-jokes">
+                     <h3>Funny jokes</h3>
+                </div>
+                <div class="category" id="travel-bucket">
+                    <h3>Travel bucket list</h3>
+                </div>
+                <div class="category" id="cooking-ideas">
+                   <h3>Random cooking ideas</h3>
+                </div>
+                <div class="category" id="album-listen">
+                    <h3>Album to listen</h3>
+                </div>
+                <div class="category" id="shopping-list">
+                    <h3>Shopping list</h3>
+                </div>
+                <div class="category" id="books-listen">
+                    <h3>Books to read</h3>
+                </div>
+            </div>
+        </main>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h2>Add New Note</h2>
+                <textarea id="noteText" placeholder="Enter your note..."></textarea>
+                <select id="categorySelect">
+                    <option value="school-notes">My school notes</option>
+                    <option value="funny-jokes">Funny jokes</option>
+                    <option value="travel-bucket">Travel bucket list</option>
+                    <option value="cooking-ideas">Random cooking ideas</option>
+                    <option value="album-listen">Album to listen</option>
+                    <option value="shopping-list">Shopping list</option>
+                    <option value="books-listen">Books to listen</option>
+                </select>
+                <button id="addNoteBtn">Add Note</button>
+                <button onclick="closePopup()">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="dash.js"></script>
+</body>
+</html>
