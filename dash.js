@@ -58,8 +58,3 @@ function toggleSidebar() {
     let sidebar = document.getElementById("sidebar");
     sidebar.classList.toggle("collapsed");
 }
-
-// Logout Function
-function logout() {
-    window.location.href = "index.html"; // Change this to your login page
-}
