@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: #84a59d;
+    margin: 0;
+    padding: 0;
+}
+.login-container, .dashboard-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button {
+    background:#ff6392;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff6392;
+}
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    background: white;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+#calendar {
+    max-width: 500px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    background: lavender;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f8f9fa;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.dark{
+   background-color: black;  
+   
+}
+.light{
+    background-color: white;
+    color: black;
+}
+#myid{
+    height: 70px;
+    width: 100px;
+    color: rgb(255, 127, 249);
+}
+#bug{
+    height: 500px;
+    width: 1000px;
+    color: black;
+    background-color:#ff6392;
+}
