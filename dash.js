@@ -56,7 +56,7 @@ function logout() {
 // Toggle Sidebar
 function toggleSidebar() {
     let sidebar = document.getElementById("sidebar");
-    sidebar.classList.toogle("collapsed");
+    sidebar.classList.toggle("collapsed");
 }
 
 // Logout Function
